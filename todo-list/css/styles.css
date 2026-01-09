@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffebee;
+    color: #333;
+}
+
+header {
+    background-color: #c62828;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.todo-container {
+    width: 100%;
+    max-width: 480px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+form {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #c62828;
+}
+
+button {
+    background-color: #c62828;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.filters button {
+    flex: 1;
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.filters button:hover {
+    background-color: #c62828;
+    color: #fff;
+}
+
+#task-counter {
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+    color: #666;
+}
+
+/*Lista*/
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li span {
+    cursor: pointer;
+    flex: 1;
+}
+
+/* COMPLETADA */
+li.completed span {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* FOOTER SIEMPRE ABAJO */
+footer {
+    background-color: #c62828;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+    form {
+        flex-direction: column;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+}

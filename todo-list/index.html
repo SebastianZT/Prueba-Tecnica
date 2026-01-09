@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List SZT</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Mi Lista de Tareas</h1>
+</header>
+
+<main>
+    <section class="todo-container">
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Escribe una nueva tarea" />
+            <button type="submit">Agregar</button>
+        </form>
+
+        <div class="filters">
+            <button data-filter="all">Todas las tareas</button>
+            <button data-filter="pending">Tareas pendientes</button>
+            <button data-filter="completed">Tareas completadas</button>
+        </div>
+
+        <p id="task-counter"></p>
+
+        <ul id="task-list"></ul>
+    </section>
+</main>
+
+<footer>
+    <p>Prueba técnica - Todo List - SZT</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

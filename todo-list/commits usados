@@ -1,0 +1,37 @@
+# INICIALIZACIÓN DEL REPOSITORIO
+
+git init
+git branch -M main
+
+# COMMITS PARA LA PRUEBA TÉCNICA
+
+# Commit 1: Estructura base + HTML semántico
+git add index.html css/styles.css js/app.js README.md
+git commit -m "chore: initial project structure and semantic HTML layout"
+
+# Commit 2: Estilos base, diseño responsive y UI minimalista
+git add css/styles.css
+git commit -m "style: add responsive layout and minimal UI design"
+
+# Commit 3: Lógica principal de la aplicación (CRUD de tareas)
+git add js/app.js
+git commit -m "feat: implement task CRUD functionality"
+
+# Commit 4: Persistencia, filtros y mejoras de UX (extras)
+git add js/app.js
+git commit -m "feat: add task filters, localStorage persistence and UX improvements"
+
+# Commit 5: Ajustes finales de layout y footer sticky
+git add css/styles.css
+git commit -m "style: improve responsive layout and sticky footer behavior"
+
+# SUBIR EL PROYECTO A GITHUB
+
+# Agregar repositorio remoto (reemplaza TU_USUARIO)
+git remote add origin https://github.com/TU_USUARIO/todo-list.git
+
+# Verificar remoto
+git remote -v
+
+# Subir el código al repositorio público
+git push -u origin main
